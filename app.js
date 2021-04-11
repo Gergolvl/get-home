@@ -12,6 +12,8 @@ function calculateFuelToOffload(totalDistanceToTravel, averageLitersOverHundred)
     // 1. lépés: Számolja ki a szükséges üzemanyag-mennyiséget.
     var requiredFuel = totalDistanceToTravel * (averageLitersOverHundred / 100);
     console.log('Szükséges üzemanyag-mennyiség: ' + requiredFuel + ' L');
-
+    
+    var fuelToOffload = tankCapacity - requiredFuel;
+    console.log('Leeresztendő üzemanyag: ' + fuelToOffload + ' L');
     // 2. lépés: Számolja ki a lecsapolandó üzemanyagot.
 }
